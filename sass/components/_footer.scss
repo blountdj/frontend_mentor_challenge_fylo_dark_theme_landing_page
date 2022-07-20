@@ -1,0 +1,159 @@
+.footer {
+  background-color: $color-dark-blue-footer;
+  color: $color-white;
+  padding-top: 25rem;
+
+  &__logo {
+    padding-left: 8%;
+    padding-bottom: 6rem;
+  }
+
+  &__details {
+    padding-left: 8%;
+    padding-right: 8%;
+
+    display: flex;
+    justify-content: space-between;
+
+    &__lorem {
+      width: 30%;
+      line-height: 1.3;
+      display: flex;
+
+      &__location {
+        padding-right: 2rem;
+        height: 3.5rem;
+      }
+    }
+
+    &__contact li {
+      padding-bottom: 2.5rem;
+    }
+
+    &__contact p {
+      padding-left: 1.5rem;
+      display: inline-block;
+    }
+
+    &__links {
+      column-count: 2;
+      column-gap: 4rem;
+      padding-bottom: 8rem;
+
+      &__link {
+        color: $color-white;
+      }
+    }
+
+    &__links li {
+      padding-bottom: 1.5rem;
+      transition: all 0.2s;
+
+      &:hover {
+        text-shadow: 0 0 1px;
+      }
+    }
+
+    &__social {
+      width: 12%;
+      display: flex;
+
+      gap: 4rem;
+    }
+  }
+}
+
+.fa-brands {
+  border: 1px solid $color-white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 1.2rem;
+  transform: scale(1.4);
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    color: $color-cyan;
+    border: 1px solid $color-cyan;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer {
+    &__details {
+      // background-color: yellowgreen;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto auto;
+      gap: 5rem;
+
+      &__lorem {
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+
+        &__text {
+        }
+      }
+
+      &__contact {
+        align-self: center;
+        justify-self: center;
+      }
+
+      &__links {
+        align-self: center;
+        column-gap: 2rem;
+      }
+
+      &__social {
+        width: 100%;
+        justify-self: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    &__details {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+
+      &__lorem {
+        width: 100%;
+        align-self: flex-start;
+        &__text {
+        }
+      }
+
+      &__contact {
+        align-self: flex-start;
+      }
+
+      &__links {
+        column-count: 1;
+        align-self: flex-start;
+        padding-bottom: 0;
+      }
+
+      &__social {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .fa-brands {
+    transform: scale(1.1);
+  }
+}

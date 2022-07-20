@@ -1,0 +1,40 @@
+.nav {
+  background-color: $color-dark-blue-intro;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: clamp(1.5rem, 3vw, 5rem);
+
+  &__logo {
+    width: clamp(10rem, 27vw, 17rem);
+  }
+
+  &__menu {
+    display: flex;
+    gap: clamp(0rem, 3vw, 6rem);
+    font-size: clamp(1.4rem, 4vw, 1.8rem);
+  }
+
+  &__item {
+    padding: 0 1rem 0 1rem;
+  }
+}
+
+a.nav__menu__item:link,
+a.nav__menu__item:visited {
+  color: $color-white;
+  padding: 0 1rem 0 1rem;
+}
+
+a.nav__menu__item:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 375px) {
+  .nav {
+    // padding: 1.5rem;
+    &__menu {
+      //   gap: 0rem;
+    }
+  }
+}

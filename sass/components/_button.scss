@@ -1,0 +1,13 @@
+.button {
+  color: $color-white;
+  background: linear-gradient(to right, $color-cyan, $color-blue);
+  border: none;
+  padding: 1.5rem 5rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+
+  &:hover {
+    background: $color-cyan;
+  }
+}
