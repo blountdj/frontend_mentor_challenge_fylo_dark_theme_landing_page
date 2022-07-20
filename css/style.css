@@ -70,6 +70,9 @@ body {
     .details__text__link {
       color: #65e2d9;
       border-bottom: 1px solid #65e2d9; }
+      .details__text__link:hover {
+        color: white;
+        border-bottom: 1px solid white; }
 
 @media (max-width: 600px) {
   .details {
@@ -299,7 +302,7 @@ body {
   position: relative;
   height: max-content;
   background-color: #1c2431;
-  z-index: -2;
+  z-index: 1;
   padding-bottom: 20rem;
   padding-top: 4rem; }
   .hero::before {
@@ -320,7 +323,7 @@ body {
     left: 0;
     bottom: 0;
     background-color: #181f2a;
-    z-index: -1;
+    z-index: 1;
     position: absolute; }
   .hero__content {
     display: flex;
