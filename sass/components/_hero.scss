@@ -14,7 +14,7 @@
     bottom: 10rem;
     // bottom: 0;
     // right: 50%;
-    background-image: url(../../images/bg-curvy-desktop.svg);
+    background-image: url(../images/bg-curvy-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -96,7 +96,7 @@
     padding-bottom: 0rem;
 
     &::before {
-      background-image: url(../../images/bg-curvy-mobile.svg);
+      background-image: url(../images/bg-curvy-mobile.svg);
       height: 30rem;
       bottom: 10rem;
     }
