@@ -40,6 +40,15 @@
     &__link {
       color: $color-cyan;
       border-bottom: 1px solid $color-cyan;
+
+      &:hover {
+        color: $color-white;
+        border-bottom: 1px solid $color-white;
+      }
+
+      &__icon {
+
+      }
     }
   }
 }
