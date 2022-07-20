@@ -46,8 +46,8 @@
         border-bottom: 1px solid $color-white;
       }
 
-      &__icon {
-
+      &:hover .details__text__link__icon {
+        fill: $color-white;
       }
     }
   }
