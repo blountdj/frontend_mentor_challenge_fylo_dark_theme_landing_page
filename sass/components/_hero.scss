@@ -2,7 +2,7 @@
   position: relative;
   height: max-content;
   background-color: $color-dark-blue-intro;
-  z-index: -2;
+  z-index: 1;
   padding-bottom: 20rem;
   padding-top: 4rem;
 
@@ -28,7 +28,7 @@
     left: 0;
     bottom: 0;
     background-color: $color-dark-blue-main;
-    z-index: -1;
+    z-index: 1;
     position: absolute;
   }
 
