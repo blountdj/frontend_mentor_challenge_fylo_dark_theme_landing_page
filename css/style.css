@@ -73,6 +73,8 @@ body {
       .details__text__link:hover {
         color: white;
         border-bottom: 1px solid white; }
+      .details__text__link:hover .details__text__link__icon {
+        fill: white; }
 
 @media (max-width: 600px) {
   .details {
